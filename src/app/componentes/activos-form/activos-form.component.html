@@ -1,0 +1,77 @@
+ <div class=" mt-5 container">
+        <div class="panel panel-primary">
+            <div class="panel-heading" >
+                <h1>Activos</h1>
+            </div>
+            <div class="panel-body">
+             <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    categoria
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </div>
+             </div>
+                <div class="row">
+                    <div class="col-md-4 mb-2 ">
+                        <label> Nombre  </label>
+                          <input type="text" name="nombre" [(ngModel)]="activo.nombre"  placeholder="nombre" class="form-control" autofocus>
+                            <div class="invalid-feedback ">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <label>Descripcion </label>
+                        <input class="form-control" type="text" [(ngModel)]="activo.descripcion" placeholder="@Modelo Pc">
+                        <div class="invalid-feedback ">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                                  </div>
+                
+                <div class="row">
+                    <div class="col-md-5 mb-3 ">
+                        <label> serie  </label>
+                        <input class="form-control" type="text"  [(ngModel)]="activo.serie" placeholder="@Marca Mouse">
+                        <div class="invalid-feedback ">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <label>Codigo Utn </label>
+                        <input class="form-control" type="text"[(ngModel)]="activo.cod_utn" placeholder="@Codigo Utn">
+                        <div class="invalid-feedback ">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3 ">
+                        <label>Estado </label> &nbsp;
+                        <input class="form-control" type="text" [(ngModel)]="activo.estado" placeholder="@Estado">
+                        <div class="invalid-feedback ">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Cantidad</label>
+                        <input class="form-control" type="text" [(ngModel)]="activo.cantidad" placeholder="@Cantidad">
+                        <div class="invalid-feedback ">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    
+                </div>
+                
+               <p><span><br></span></p>
+
+                  <button class="btn btn-success btn-block" (click)="edit ? updateActivo() : saveNewActivo()">
+             Save
+            </button>
+                <div class="mt-5">
+                    <p><span><br></span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
