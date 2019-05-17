@@ -57,7 +57,6 @@ import { UbicacionOrdenaFormComponent } from './componentes/ubicacion-ordena-for
 
 
 import {ActivosService} from './services/activos.service';
-import {OrdenadorService} from './services/ordenador.service';
 import { from } from 'rxjs';
 @NgModule({
   declarations: [
@@ -118,8 +117,7 @@ import { from } from 'rxjs';
     FormsModule 
   ],
   providers: [
-   ActivosService,
-    OrdenadorService
+   ActivosService
   ],
   bootstrap: [AppComponent]
 })

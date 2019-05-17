@@ -1,8 +1,8 @@
 import { Title } from '@angular/platform-browser';
 
-export interface Ordenadores {
-    id_pc?: number,
-    codutnpc?: string,
+export interface Categoriactv {
+id_pc?: number,
+    codutnpc?: number,
     tipopc?: string,
     marcapc?: string,
     modelopc?: string,
@@ -20,4 +20,4 @@ export interface Ordenadores {
     moprocesador?: string,
     capacidaddisco?: string,
     capacidadram?: string
-};
+}
